@@ -1,0 +1,12 @@
+@font-face {
+    font-family: testFont;
+    src: url("/stylesheets/fonts/waltographUi.ttf");
+}
+
+h2 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h3 {
+    font-family: testFont;
+}
