@@ -1,0 +1,17 @@
+div > p {
+    color: blue;
+}
+
+div + p {
+    font-weight: bold;
+    color: red;
+}
+
+span ~ p {
+    color: green;
+    font-style: italic;
+}
+
+a[title] {
+    text-decoration: none;
+}

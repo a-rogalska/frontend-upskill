@@ -1,0 +1,30 @@
+div {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.color-hex {
+    background: #ff0000;
+}
+
+.color-rgb {
+    background: rgb(224, 0, 0);
+}
+
+.color-rgba {
+    background: rgba(255, 0, 0, 0.5)
+}
+
+.color-hsl {
+    background: hsl(0, 80%, 80%)
+}
+
+.color-hsla {
+    background: hsla(0, 80%, 70%, 0.5)
+}
+
+.color-predefined {
+    background: lightcoral;
+}

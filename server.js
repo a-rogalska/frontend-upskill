@@ -23,6 +23,22 @@ app.get('/1/4', function (req, res) {
   res.sendFile('4.html', {root: path.join(__dirname, '/1/')});
 });
 
+app.get('/1/5', function (req, res) {
+  res.sendFile('5.html', {root: path.join(__dirname, '/1/')});
+});
+
+app.get('/1/6', function (req, res) {
+  res.sendFile('6.html', {root: path.join(__dirname, '/1/')});
+});
+
+app.get('/1/7', function (req, res) {
+  res.sendFile('7.html', {root: path.join(__dirname, '/1/')});
+});
+
+app.get('/1/8', function (req, res) {
+  res.sendFile('8.html', {root: path.join(__dirname, '/1/')});
+});
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });

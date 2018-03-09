@@ -1,0 +1,21 @@
+p {
+    color: red;
+}
+
+div {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.ex-1 {
+    display: inline;
+}
+
+.ex-2 {
+    display: block;
+}
+
+.ex-3 {
+    display: inline-block;
+    width: 300px; 
+}
