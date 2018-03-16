@@ -2,10 +2,16 @@ p {
     width: 300px;
 }
 
-p::before { 
+p.p-1::before { 
     content: "Read this -";
     background-color: yellow;
     color: red;
+    font-weight: bold;
+}
+
+p.p-1::after { 
+    content: "Great!";
+    color: green;
     font-weight: bold;
 }
 
