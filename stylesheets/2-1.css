@@ -1,0 +1,31 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table tr:first-child {
+    background: indianred;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background: lightblue;
+}
+
+tr:nth-child(even) {
+    background: lightyellow;
+}
+
+table tr:nth-child(4) {
+    background: lightsalmon;
+}
+
+tr:last-child {
+    background: blue;
+    color: white;
+}
+
+tr.my-name:hover {
+    background: inherit;
+}

@@ -1,0 +1,20 @@
+p {
+    width: 300px;
+}
+
+p::before { 
+    content: "Read this -";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+p.p-2::first-letter {
+    font-size: 30px;
+}
+
+p.p-2::first-line {
+    text-decoration: underline;
+}
+
+
