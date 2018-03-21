@@ -1,0 +1,47 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes translate {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(50px, 100px);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+.square {
+    padding: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    background: red;
+    color: white;
+}
+
+.square-1 {
+    animation: rotate 4s linear 2 alternate;
+}
+
+.square-2 {
+    animation: translate 4s linear 2 alternate;
+}
+
+.square-3 {
+    animation: scale 4s linear;
+}

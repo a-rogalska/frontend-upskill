@@ -1,0 +1,69 @@
+@keyframes text {
+    from {
+        margin-left: 105%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes round {
+    from {
+        border-radius: 0%;
+    }
+    to {
+        border-radius: 50%;
+    }
+}
+
+@keyframes color {
+    from {
+        background: rgba(0, 0, 255, 1);
+    }
+    to {
+        background: rgba(0, 0, 255, 0);
+    }
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 10px 10px 10px #cccccc;
+    }
+    to {
+        box-shadow: 0;
+    }
+}
+
+h1 {
+    animation-name: text;
+    animation-duration: 6s;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.square-1 {
+    background: red;
+    animation-name: round;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.square-2 {
+    background: blue;
+    animation: color 4s linear 0s 2 alternate;
+}
+
+.square-3 {
+    background: gray;
+}
+
+.square-3:hover {
+    animation-name: shadow;
+    animation-duration: 4s;
+}

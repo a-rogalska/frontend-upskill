@@ -51,6 +51,18 @@ app.get('/2/3', function (req, res) {
   res.sendFile('3.html', {root: path.join(__dirname, '/2/')});
 });
 
+app.get('/2/4', function (req, res) {
+  res.sendFile('4.html', {root: path.join(__dirname, '/2/')});
+});
+
+app.get('/2/5', function (req, res) {
+  res.sendFile('5.html', {root: path.join(__dirname, '/2/')});
+});
+
+app.get('/2/6', function (req, res) {
+  res.sendFile('6.html', {root: path.join(__dirname, '/2/')});
+});
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
