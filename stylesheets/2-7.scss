@@ -1,0 +1,37 @@
+$black-color: black;
+$red-color: red;
+$white-color: white;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+%border-shared {
+    border: 2px dashed $black-color;
+}
+
+.square {
+    padding: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    background: $red-color;
+    color: $white-color;
+
+    &.square-1 {
+        background: $black-color;   
+        @include border-radius(10px); 
+    }
+
+    &.square-2 {
+        @extend %border-shared;
+        border-color: $white-color;
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}
